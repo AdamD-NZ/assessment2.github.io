@@ -9,3 +9,20 @@
   padding: 20px;
   font-size: 30px;
 }
+
+/* Style the top navigation bar */
+.topnav {   
+overflow: hidden;   
+background-color: gray;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+    float:left;   
+    display: block;
+    color:black;   
+    text-align: center;   
+    padding: 14px 16px;   
+    text-decoration: none;
+}
