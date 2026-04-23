@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Us</title>
+  </head>
 
+  <body>
+    <div class="page-wrapper">
+
+      <!-- Main header used across all pages -->
+      <header>
+        <h1>Snazzy Paws Grooming</h1>
+      </header>
+
+      <!-- Navigation menu -->
+      <nav class="topnav">
+        <div class="nav-logo">
+          <img src="images/pawprints.png" alt="Snazzy Paws Grooming logo">
+          <span class="site-name">Snazzy Paws Grooming</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Main page content -->
+      <main class="main-content">
+
+        <section class="contact-intro">
+          <h2>Contact Us</h2>
+          <p>
+            We would love to hear from you. Contact us with any questions about our services,
+            bookings or grooming treatments.
+          </p>
+        </section>
+
+        <section class="contact-details">
+          <h2>Our Details</h2>
+          <p><strong>Phone:</strong> 07 123 4567</p>
+          <p><strong>Email:</strong> info@snazzypawsgrooming.co.nz</p>
+          <p><strong>Address:</strong> 57 Mahana Road, Te Rapa, Hamilton 3200</p>
+          <p><strong>Opening hours:</strong> Monday&ndash;Saturday, 9am&ndash;5pm</p>
+        </section>
+
+        <div class="contact-layout">
+
+          <iframe
+            class="map"
+            title="Map showing location of Snazzy Paws Grooming"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.272919696511!2d175.24807027646133!3d-37.76019837198903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d225e116eae2d%3A0x67e79e264a628c1d!2s57%20Mahana%20Road%2C%20Te%20Rapa%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1776657400156!5m2!1sen!2snz"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+
+          <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#contact-success">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-row">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" required></textarea>
+              </div>
+
+              <button type="submit" class="primary-button">Send Message</button>
+            </form>
+
+            <p id="contact-success" class="form-success">
+              Thank you for contacting Snazzy Paws Grooming.
+              We will get back to you as soon as possible.
+            </p>
+          </section>
+
+        </div>
+
+      </main>
+
+      <!-- Footer used across the site -->
+      <footer>
+        <p>
+          Snazzy Paws Grooming<br>
+          Opening hours: Monday&ndash;Saturday, 9am&ndash;5pm
+        </p>
+      </footer>
+
+    </div>
+  </body>
+</html>
