@@ -1,157 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Request a grooming appointment for your dog at Snazzy Paws Grooming in Hamilton.">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J44YBCPWNL"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-J44YBCPWNL');
-     </script>
-    <title>Booking</title>
-  </head>
+    <meta name="description"
+          content="Request a grooming appointment for your dog at Snazzy Paws Grooming in Hamilton.">
 
-  <body>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Booking | Snazzy Paws Grooming</title>
+</head>
+
+<body>
+
     <div class="page-wrapper">
 
-      <!-- Main header used across all pages -->
-      <header>
-        <h1>Snazzy Paws Grooming</h1>
-      </header>
+        <!-- Main header used across all pages -->
+        <header>
+            <h1>Snazzy Paws Grooming</h1>
+        </header>
 
-      <!-- Navigation menu -->
-      <nav class="topnav">
-        <div class="nav-logo">
-          <img src="images/pawprints.png" alt="Snazzy Paws Grooming logo">
-          <span class="site-name">Snazzy Paws Grooming</span>
-        </div>
+        <!-- Main navigation used across all pages -->
+        <nav class="topnav navbar navbar-expand-lg">
+            <div class="nav-logo">
+                <img src="images/pawprints.png"
+                     alt="Snazzy Paws Grooming logo">
 
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="booking.html" class="active">Booking</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
+                <span class="site-name">
+                    Snazzy Paws Grooming
+                </span>
+            </div>
 
-      <!-- Main page content -->
-      <main class="main-content">
+            <div class="nav-links navbar-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="booking.html" class="nav-link active">Booking</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
 
-        <section class="booking-intro">
-          <h2>Booking Request</h2>
-          <p>
-            Use the form below to request a grooming appointment for your dog.
-            Our team will contact you by email or phone to confirm availability and pricing.
-          </p>
-        </section>
+        <!-- Main page content -->
+        <main class="main-content container py-4">
 
-        <div class="booking-form">
-          <form action="#booking-progress">
+            <!-- Booking introduction -->
+            <section class="booking-intro">
 
-            <fieldset>
-              <legend>Customer Details</legend>
+                <h2>Booking Request</h2>
 
-              <div class="form-row">
-                <label for="customer-type">Customer Type</label>
-                <select id="customer-type" name="customer-type" required>
-                  <option value="">Please select</option>
-                  <option value="new">New customer</option>
-                  <option value="existing">Existing customer</option>
-                </select>
-              </div>
+                <p>
+                    Use the form below to request a grooming appointment for your dog.
+                    Our team will contact you by email or phone to confirm availability
+                    and pricing.
+                </p>
 
-              <div class="form-row">
-                <label for="ownername">Owner Name</label>
-                <input type="text" id="ownername" name="ownername" required>
-              </div>
+            </section>
 
-              <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
+            <!-- Booking request form -->
+            <section class="booking-form">
 
-              <div class="form-row">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" required>
-              </div>
-            </fieldset>
+                <form action="#booking-progress">
 
-            <fieldset>
-              <legend>Dog Details</legend>
+                    <fieldset class="mb-4">
+                        <legend>Customer Details</legend>
 
-              <div class="form-row">
-                <label for="dogname">Dog’s Name</label>
-                <input type="text" id="dogname" name="dogname" required>
-              </div>
+                        <div class="form-row mb-3">
+                            <label for="customer-type" class="form-label">
+                                Customer Type
+                            </label>
 
-              <div class="form-row">
-                <label for="breed">Breed</label>
-                <input type="text" id="breed" name="breed" required>
-              </div>
+                            <select id="customer-type"
+                                    name="customer-type"
+                                    class="form-select"
+                                    required>
+                                <option value="">Please select</option>
+                                <option value="new">New customer</option>
+                                <option value="existing">Existing customer</option>
+                            </select>
+                        </div>
 
-              <div class="form-row">
-                <label for="age">Dog’s Age</label>
-                <input type="number" id="age" name="age" min="0" required>
-              </div>
-            </fieldset>
+                        <div class="form-row mb-3">
+                            <label for="ownername" class="form-label">
+                                Owner Name
+                            </label>
 
-            <fieldset>
-              <legend>Appointment Details</legend>
+                            <input type="text"
+                                   id="ownername"
+                                   name="ownername"
+                                   class="form-control"
+                                   required>
+                        </div>
 
-              <div class="form-row">
-                <label for="service">Preferred Service</label>
-                <select id="service" name="service" required>
-                  <option value="">Please select</option>
-                  <option value="bath-brush">Bath and brush</option>
-                  <option value="haircut">Haircut</option>
-                  <option value="nail-trim">Nail trim</option>
-                  <option value="ear-cleaning">Ear cleaning</option>
-                  <option value="teeth-brushing">Teeth brushing</option>
-                  <option value="deshedding">De-shedding treatment</option>
-                  <option value="flea-tick">Flea and tick treatment</option>
-                  <option value="spa">Spa package</option>
-                  <option value="puppy">Puppy package</option>
-                  <option value="senior">Senior dog package</option>
-                  <option value="full-groom">Full grooming package</option>
-                </select>
-              </div>
+                        <div class="form-row mb-3">
+                            <label for="email" class="form-label">
+                                Email
+                            </label>
 
-              <div class="form-row">
-                <label for="preferred-date">Preferred Date</label>
-                <input type="date" id="preferred-date" name="preferred-date" required>
-              </div>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   class="form-control"
+                                   required>
+                        </div>
 
-              <div class="form-row">
-                <label for="notes">Notes</label>
-                <textarea id="notes" name="notes" placeholder="Add any grooming requests or other important information"></textarea>
-              </div>
-            </fieldset>
+                        <div class="form-row mb-3">
+                            <label for="phone" class="form-label">
+                                Phone
+                            </label>
 
-            <button type="submit" class="primary-button">Submit Booking Request</button>
-          </form>
+                            <input type="tel"
+                                   id="phone"
+                                   name="phone"
+                                   class="form-control"
+                                   required>
+                        </div>
+                    </fieldset>
 
-          <p id="booking-progress" class="booking-progress">
-            Thank you for your booking request. We will contact you shortly by email or phone to confirm your appointment.
-          </p>
-        </div>
+                    <fieldset class="mb-4">
+                        <legend>Dog Details</legend>
 
-      </main>
+                        <div class="form-row mb-3">
+                            <label for="dogname" class="form-label">
+                                Dog’s Name
+                            </label>
 
-      <!-- Footer used across the site -->
-      <footer>
-        <p>
-          Snazzy Paws Grooming<br>
-          Opening hours: Monday&ndash;Saturday, 9am&ndash;5pm<br>
-          <a href="privacy.html">Privacy Policy</a>
-        </p>
-      </footer>
+                            <input type="text"
+                                   id="dogname"
+                                   name="dogname"
+                                   class="form-control"
+                                   required>
+                        </div>
+
+                        <div class="form-row mb-3">
+                            <label for="breed" class="form-label">
+                                Breed
+                            </label>
+
+                            <input type="text"
+                                   id="breed"
+                                   name="breed"
+                                   class="form-control"
+                                   required>
+                        </div>
+
+                        <div class="form-row mb-3">
+                            <label for="age" class="form-label">
+                                Dog’s Age
+                            </label>
+
+                            <input type="number"
+                                   id="age"
+                                   name="age"
+                                   min="0"
+                                   class="form-control"
+                                   required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                        <legend>Appointment Details</legend>
+
+                        <div class="form-row mb-3">
+                            <label for="service" class="form-label">
+                                Preferred Service
+                            </label>
+
+                            <select id="service"
+                                    name="service"
+                                    class="form-select"
+                                    required>
+                                <option value="">Please select</option>
+                                <option value="bath-brush">Bath and brush</option>
+                                <option value="haircut">Haircut</option>
+                                <option value="nail-trim">Nail trim</option>
+                                <option value="ear-cleaning">Ear cleaning</option>
+                                <option value="teeth-brushing">Teeth brushing</option>
+                                <option value="deshedding">De-shedding treatment</option>
+                                <option value="flea-tick">Flea and tick treatment</option>
+                                <option value="spa">Spa package</option>
+                                <option value="puppy">Puppy package</option>
+                                <option value="senior">Senior dog package</option>
+                                <option value="full-groom">Full grooming package</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row mb-3">
+                            <label for="preferred-date" class="form-label">
+                                Preferred Date
+                            </label>
+
+                            <input type="date"
+                                   id="preferred-date"
+                                   name="preferred-date"
+                                   class="form-control"
+                                   required>
+                        </div>
+
+                        <div class="form-row mb-3">
+                            <label for="notes" class="form-label">
+                                Notes
+                            </label>
+
+                            <textarea id="notes"
+                                      name="notes"
+                                      class="form-control"
+                                      placeholder="Add any grooming requests or other important information"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit"
+                            class="primary-button btn btn-primary">
+                        Submit Booking Request
+                    </button>
+
+                </form>
+
+                <p id="booking-progress" class="booking-progress mt-3">
+                    Thank you for your booking request. We will contact you shortly
+                    by email or phone to confirm your appointment.
+                </p>
+
+            </section>
+
+        </main>
+
+        <!-- Footer used across the site -->
+        <footer>
+            <p>
+                Snazzy Paws Grooming<br>
+                Opening hours: Monday&ndash;Saturday, 9am&ndash;5pm<br>
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </footer>
 
     </div>
-  </body>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
