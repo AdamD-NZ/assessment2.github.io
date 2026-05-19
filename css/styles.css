@@ -35,6 +35,11 @@ footer {
     padding: 1rem;
 }
 
+/* Prevent address text from displaying in italics */
+address {
+    font-style: normal;
+}
+
 /* Keyboard focus styles for accessibility */
 .topnav a:focus,
 .primary-button:focus,
